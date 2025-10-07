@@ -1,0 +1,38 @@
+# Google App Engine dispatch configuration
+# This file routes requests to the appropriate service based on URL patterns.
+# Reference: https://cloud.google.com/appengine/docs/standard/python/config/dispatch-ref
+
+# Example: Route all /api/* traffic to the 'api' service, everything else to 'default'.
+# Adjust as needed for your project structure and services.
+
+dispatch:
+  # Route all /api/* requests to the 'api' service (if you have a separate backend)
+  # - url: '*/api/*'
+  #   service: api
+
+  # Route all /admin/* requests to the 'admin' service (if you have a separate admin frontend)
+  # - url: '*/admin/*'
+  #   service: admin
+
+  # Route all traffic for thepreplab.in to the preplab-web service
+  - url: 'thepreplab.in/*'
+    service: preplab-web
+
+  # Route all traffic for modiclasses.in to the modiclasses service
+ 
+
+  # Also route www subdomain to the same modiclasses service
+  - url: 'modiclasses.in/*'
+    service: modiclasses-web
+
+  # Route all traffic for uxsensei.in to the uxsensei service
+  - url: 'uxsensei.in/*'
+    service: uxsensei
+
+  # Also route www subdomain to the same uxsensei service
+  - url: 'www.uxsensei.in/*'
+    service: uxsensei
+
+# Route all traffic for selfpadhai.in to the selfpadhai service
+  - url: 'selfpadhai.in/*'
+    service: momento
