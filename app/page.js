@@ -114,12 +114,12 @@ const exams = [
 
         {/* Auth Buttons */}
         <div className="flex items-center space-x-4">
-          <Link href="https://learn.thepreplab.in/" target="_blank" rel="noopener noreferrer">
+          <Link href="https://learn.thepreplab.in/">
             <button className="px-6 py-2.5 text-sm font-semibold text-gray-700 border border-gray-300 rounded-full hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 transform hover:scale-105">
               Login
             </button>
           </Link>
-          <Link href="https://learn.thepreplab.in/" target="_blank" rel="noopener noreferrer">
+          <Link href="https://learn.thepreplab.in/">
             <button className="px-6 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105">
               Sign Up
             </button>
@@ -216,7 +216,7 @@ const exams = [
             transition={{ duration: 0.8, delay: 1.3 }}
           >
             <motion.button 
-              onClick={() => window.open('https://learn.thepreplab.in/', '_blank', 'noopener,noreferrer')}
+              onClick={() => router.push('https://learn.thepreplab.in/')}
               className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -679,7 +679,7 @@ const exams = [
             viewport={{ once: true }}
           >
             <motion.button 
-              onClick={() => window.open('https://learn.thepreplab.in/', '_blank', 'noopener,noreferrer')}
+              onClick={() => router.push('https://learn.thepreplab.in/')}
               className="px-12 py-5 text-lg font-bold text-white bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 rounded-full hover:shadow-2xl hover:shadow-blue-500/25 transition-all duration-500 transform hover:scale-110 hover:from-blue-700 hover:via-cyan-700 hover:to-teal-700"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -985,7 +985,7 @@ const exams = [
             viewport={{ once: true }}
           >
             <motion.button 
-              onClick={() => window.open('https://learn.thepreplab.in/', '_blank', 'noopener,noreferrer')}
+              onClick={() => router.push('https://learn.thepreplab.in/')}
               className="px-12 py-5 text-lg font-bold text-blue-600 bg-white rounded-full hover:bg-blue-50 hover:shadow-2xl hover:shadow-white/10 transition-all duration-500 transform hover:scale-110 border-2 border-transparent hover:border-blue-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
